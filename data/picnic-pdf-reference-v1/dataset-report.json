@@ -1,0 +1,29 @@
+{
+  "source_sha256": "106cc22421fdf3309d9c97f29ba3f30f60f8bf403384d85b9dc40c5b74682f78",
+  "source_pages": 83,
+  "facts": 55,
+  "sft": {
+    "train": 68,
+    "validation": 30,
+    "test": 12
+  },
+  "grounded": {
+    "train": 94,
+    "validation": 45,
+    "test": 18
+  },
+  "retrieval_chunks": 224,
+  "status": "seed_dataset_not_exhaustive",
+  "checks": [
+    "unique ids, nonempty messages, valid PDF pages, disjoint topics",
+    "unique ids, nonempty messages, valid PDF pages, disjoint topics"
+  ],
+  "limitations": [
+    "Edition-specific names: Archibald, not Arthur.",
+    "Page 3,24,45,68 contain section boundaries; section labels use page starts and may include preceding text.",
+    "PDF text extraction can contain spacing/recognition artifacts; original PDF is authoritative.",
+    "Closed-book held-out topics test unseen knowledge; use grounded evaluation to test reading and refusal.",
+    "Retrieval corpus intentionally contains held-out facts: retrieval access is not SFT training leakage.",
+    "Automatic checks validate structure, not every semantic claim. This is a curated starting set, not a complete fan wiki."
+  ]
+}

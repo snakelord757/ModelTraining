@@ -1,0 +1,47 @@
+{
+  "status": "finished",
+  "lengths": [
+    12288
+  ],
+  "batch_size": 1,
+  "rank": 8,
+  "microbatches_per_optimizer_step": 2,
+  "optimizer_steps_per_length": 2,
+  "results": [
+    {
+      "length": 12288,
+      "status": "passed",
+      "steps": [
+        {
+          "seconds": 180.848187391,
+          "loss": 6.824931621551514
+        },
+        {
+          "seconds": 107.8365728440001,
+          "loss": 6.81182861328125
+        }
+      ],
+      "repeated_source": true,
+      "peak_allocated_gib": 11.627551555633545,
+      "peak_reserved_gib": 12.9453125,
+      "free_gib": 1.566650390625
+    }
+  ],
+  "dataset_summary": {
+    "count": 9434,
+    "min": 45,
+    "max": 10290,
+    "p50": 4525,
+    "p90": 4879,
+    "p95": 5070,
+    "p99": 5410,
+    "coverage": {
+      "2048": 0.010917956328174687,
+      "4096": 0.06529573881704473,
+      "8192": 0.9997880008479966,
+      "16384": 1.0,
+      "32768": 1.0,
+      "65536": 1.0
+    }
+  }
+}

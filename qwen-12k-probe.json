@@ -1,0 +1,21 @@
+{
+  "model_id": "Qwen/Qwen3-1.7B",
+  "status": "passed",
+  "length": 12288,
+  "batch_size": 1,
+  "gradient_accumulation": 8,
+  "steps": [
+    {
+      "seconds": 50.86652519200001,
+      "loss": 5.113113880157471
+    },
+    {
+      "seconds": 38.05656469500002,
+      "loss": 5.106172561645508
+    }
+  ],
+  "repeated_source": true,
+  "peak_allocated_gib": 2.714838981628418,
+  "peak_reserved_gib": 3.3359375,
+  "free_gib": 11.41015625
+}

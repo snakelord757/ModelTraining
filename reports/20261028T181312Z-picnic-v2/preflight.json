@@ -1,0 +1,5 @@
+{
+  "cases": 32,
+  "max_prompt_tokens": 2680,
+  "generation_budget": 384
+}

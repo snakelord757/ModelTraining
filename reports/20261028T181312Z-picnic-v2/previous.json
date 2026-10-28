@@ -1,0 +1,470 @@
+{
+  "phase": "previous",
+  "adapter": "/mnt/d/ModelTraining/outputs/qwen-picnic-grounded-v1/adapter",
+  "settings": {
+    "max_new_tokens": 384,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.0
+  },
+  "seed": 3407,
+  "suite_sha256": "aeab6bc854fed41ce879a06baf4f56cae50931004e36028358777da29eed0b55",
+  "answers": [
+    {
+      "id": "F025-q1-grounded",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 7.682737306000007,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F025-q2-grounded",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.833182043000022,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F025-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 2.1239158760000123,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F028-q1-grounded",
+      "answer": "В предоставленных фрагментах Мясник — это человек, который занимается операциями по лечению нечеловеческих заболеваний, включая бронхиты, астму и другие болезни. Он работает в клинике и, возможно, имеет опыт в медицине. Его описание указывает, что он в роскошном халате с золотыми кистями, но не уточняется, является ли он врачом или другим специалистом. Фрагменты не дают информации о его конкретной профессии, кроме того, что он занимается лечением нечеловеческих заболеваний. Подтверждающая страница: [PDF, с. 30].",
+      "tokens": 175,
+      "hit_limit": false,
+      "seconds": 14.55397640999999,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [
+          30
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F028-q2-grounded",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8134626749999825,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F028-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.6600591290000182,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F036-q1-grounded",
+      "answer": "В предоставленных фрагментах не указано, как Нунан называет Мартышку по имени. В тексте упоминается, что Мартышка — это его дочь, но не уточняется её имя. Подтверждающая страница: [PDF, с. 64].",
+      "tokens": 72,
+      "hit_limit": false,
+      "seconds": 6.063207487999989,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [
+          64
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F036-q2-grounded",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8003674919999924,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F036-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.6733434470000077,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F037-q1-grounded",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.798853250999997,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F037-q2-grounded",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.779716542000017,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F037-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.709691045999989,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F040-q1-grounded",
+      "answer": "В предоставленных фрагментах высказывается версия, что контакт продолжается. В тексте упоминается, что пришельцы \"угнездились в Зонах\" и \"тщательно нас изучают\", что подразумевает, что контакты не прекращены. Также говорится, что \"мы сейчас находимся в состоянии контакта, только не подозреваем об этом\", что подтверждает продолжение контакта.",
+      "tokens": 106,
+      "hit_limit": false,
+      "seconds": 8.856662652000011,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F040-q2-grounded",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.7995387200000152,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F040-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.674656970000001,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F042-q1-grounded",
+      "answer": "В предоставленных фрагментах не указано, кто сопровождает Рэдрика в последнем походе.",
+      "tokens": 31,
+      "hit_limit": false,
+      "seconds": 2.653747836000008,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F042-q2-grounded",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.797644570999978,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F042-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.7085032560000002,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "unknown-1",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.7327502320000008,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "unknown-2",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8546145649999914,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F025-new-answer",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8281181220000065,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F025-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8254625460000113,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F028-new-answer",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8264386049999928,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F028-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8292185679999875,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F036-new-answer",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.9688396079999961,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F036-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.7673288809999974,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F037-new-answer",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8078580899999963,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F037-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8216214869999874,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F040-new-answer",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8399233089999996,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F040-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8438966049999976,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F042-new-answer",
+      "answer": "В предоставленных фрагментах не указано имя юноши, который пошёл вместе с Рэдриком в финале романа. Следовательно, ответа нет во всём романе. [PDF, с. 68]",
+      "tokens": 62,
+      "hit_limit": false,
+      "seconds": 5.296800504000004,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [
+          68
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F042-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа.",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.9559251320000044,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    }
+  ]
+}

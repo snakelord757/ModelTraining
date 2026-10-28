@@ -1,0 +1,64 @@
+<!doctype html><meta charset="utf-8"><title>500-example experiment</title><h1>Эксперимент: 500 примеров</h1>
+<p>Исходная Qwen, LR 2e-5, одна эпоха. Отбор эвристический; литературное качество требует прочтения ответов.</p>
+<p>Время обучения с промежуточной валидацией: 900 секунд.</p>
+<p>Во вложенных отчётах время относится ко всему эксперименту, а не к отдельной контрольной точке.</p>
+<p>Сравнение на 20 запросах — диагностика для выбора настроек, не независимый итоговый тест. Параметры генерации отличаются от старого отчёта; база пересчитана.</p>
+<h2><a href="step-20/report.html">Шаг 20</a></h2><p>Ухудшения проверок: [&#x27;L03&#x27;]; зацикливания: []</p>
+<h2><a href="step-40/report.html">Шаг 40</a></h2><p>Ухудшения проверок: [&#x27;C03&#x27;]; зацикливания: [&#x27;L08&#x27;]</p>
+<h2><a href="final/report.html">Шаг 63</a></h2><p>Ухудшения проверок: [&#x27;C03&#x27;]; зацикливания: []</p>
+<h2>Валидация</h2><pre>{
+  &quot;before&quot;: {
+    &quot;eval_loss&quot;: 3.0764217376708984,
+    &quot;eval_model_preparation_time&quot;: 0.014,
+    &quot;eval_runtime&quot;: 38.0974,
+    &quot;eval_samples_per_second&quot;: 0.84,
+    &quot;eval_steps_per_second&quot;: 0.84,
+    &quot;epoch&quot;: 0
+  },
+  &quot;during&quot;: [
+    {
+      &quot;epoch&quot;: 0.32,
+      &quot;eval_loss&quot;: 2.945429563522339,
+      &quot;eval_model_preparation_time&quot;: 0.014,
+      &quot;eval_runtime&quot;: 17.2484,
+      &quot;eval_samples_per_second&quot;: 1.855,
+      &quot;eval_steps_per_second&quot;: 1.855,
+      &quot;step&quot;: 20
+    },
+    {
+      &quot;epoch&quot;: 0.64,
+      &quot;eval_loss&quot;: 2.840554714202881,
+      &quot;eval_model_preparation_time&quot;: 0.014,
+      &quot;eval_runtime&quot;: 17.2404,
+      &quot;eval_samples_per_second&quot;: 1.856,
+      &quot;eval_steps_per_second&quot;: 1.856,
+      &quot;step&quot;: 40
+    },
+    {
+      &quot;epoch&quot;: 0.96,
+      &quot;eval_loss&quot;: 2.8174495697021484,
+      &quot;eval_model_preparation_time&quot;: 0.014,
+      &quot;eval_runtime&quot;: 20.1723,
+      &quot;eval_samples_per_second&quot;: 1.586,
+      &quot;eval_steps_per_second&quot;: 1.586,
+      &quot;step&quot;: 60
+    },
+    {
+      &quot;epoch&quot;: 1.0,
+      &quot;eval_loss&quot;: 2.817197322845459,
+      &quot;eval_model_preparation_time&quot;: 0.014,
+      &quot;eval_runtime&quot;: 17.2482,
+      &quot;eval_samples_per_second&quot;: 1.855,
+      &quot;eval_steps_per_second&quot;: 1.855,
+      &quot;step&quot;: 63
+    }
+  ],
+  &quot;after&quot;: {
+    &quot;eval_loss&quot;: 2.817185401916504,
+    &quot;eval_model_preparation_time&quot;: 0.014,
+    &quot;eval_runtime&quot;: 30.5496,
+    &quot;eval_samples_per_second&quot;: 1.047,
+    &quot;eval_steps_per_second&quot;: 1.047,
+    &quot;epoch&quot;: 1.0
+  }
+}</pre>

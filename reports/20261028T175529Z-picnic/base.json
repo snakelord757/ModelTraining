@@ -1,0 +1,296 @@
+{
+  "phase": "base",
+  "adapter": null,
+  "settings": {
+    "max_new_tokens": 384,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.0
+  },
+  "seed": 3407,
+  "suite_sha256": "4e3f816c98422267397c4c8a956127666a3ac157aca1b8fb08617359638bb034",
+  "answers": [
+    {
+      "id": "F025-q1-grounded",
+      "answer": "Мартышка обладает необычной особенностью — она имеет темные, безбелковые глаза.",
+      "tokens": 28,
+      "hit_limit": false,
+      "seconds": 10.769680649999998,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F025-q2-grounded",
+      "answer": "В контексте предоставленного PDF на странице 55 говорится, что Нунан увидел Валентина в «Боржче», где «Боржч» изменился — не пьяные, не веселье, Гуталин не ходит, Рэдрик Шухарт, наверное, сунул нос свой конопаты, покривился и ушел. Эрнест сидит, заправляет делами его старуха — дорвалась: солидная постоянная клиентура — весь институт сюда ходит обедать, да и старшие офицеры, — уютные кабинки, готовят вкусно, берут недорого, пиво всегда свежее. Добрая старая харчевня. В одной из кабинок Нунан увидел Валентина. Физик, читая сложенный пополам журнал, сидел над чашечкой кофе. Нунан подошел. — Разрешите соседствовать? — спросил он. Валентин поднял на него черные окуляры. — А, — сказал он.",
+      "tokens": 281,
+      "hit_limit": false,
+      "seconds": 14.071183661000006,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F025-no-context",
+      "answer": "В контексте предоставленного текста не указано, какая необычная особенность обладает Мартышка. Следовательно, факта о её необычной особенности не существует в данном材料.",
+      "tokens": 54,
+      "hit_limit": false,
+      "seconds": 2.743321546000004,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F028-q1-grounded",
+      "answer": "Мясник — опытный и модный хирург, специализирующийся на нечеловеческих заболеваниях, включая уродства и повреждения человеческого организма. Он также брал свою долю с Зоны, брал знаниями, изучая на покалеченных сталкерах неизвестные болезни, и брал славой — славой первого на земле врача, специалиста по нечеловеческим заболеваниям. Его профессия связана с хирургией, но он также занимается медициной и имеет опыт в области нечеловеческих болезней.",
+      "tokens": 166,
+      "hit_limit": false,
+      "seconds": 7.729404166999998,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F028-q2-grounded",
+      "answer": "Рэдрик привозит раненого сталкера Мяснику.",
+      "tokens": 21,
+      "hit_limit": false,
+      "seconds": 1.147507748999999,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F028-no-context",
+      "answer": "Мясник по профессии — это человек, который занимается сельским хозяйством, в частности, выращиванием и обработкой животных. В контексте романа «Пикник на обочине» он представлен как один из местных жителей, живущий в селе. Его профессия не уточняется подробно в данном тексте.",
+      "tokens": 87,
+      "hit_limit": false,
+      "seconds": 4.05115039399999,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F036-q1-grounded",
+      "answer": "Нунан называет Мартышку по имени «Мартышка».",
+      "tokens": 18,
+      "hit_limit": false,
+      "seconds": 1.0232847590000063,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F036-q2-grounded",
+      "answer": "В третьей главе указано, что имя дочери Шухарта звучит как **Нунан**.",
+      "tokens": 29,
+      "hit_limit": false,
+      "seconds": 1.4835078779999975,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F036-no-context",
+      "answer": "В контексте предоставленного текста не указано, как Нунан называет Мартышку по имени. Страница PDF не содержит информации о данном вопросе.",
+      "tokens": 39,
+      "hit_limit": false,
+      "seconds": 1.7755120989999966,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F037-q1-grounded",
+      "answer": "В контексте предоставленного PDF на странице 12 упоминается «комариная плешь», которая в переводе с английского означает «комаровая плешь» или «комаровая губа». Это место, где в романе «Пикник на обочине» происходит важная сцена, в которой происходит столкновение с врагом. Плешь в данном случае не является физическим объектом, а метафора, символизирующая опасность и хаос, который возникает в результате несчастного случая.",
+      "tokens": 131,
+      "hit_limit": false,
+      "seconds": 6.115058367000003,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F037-q2-grounded",
+      "answer": "Нунан объясняет комариные плеши Пильману как области повышенной гравитации, направленную гравитацию. Он упоминает, что эти плеши — это области, где гравитация направлена в определенное направление, и что она не понимает, как это может быть истолковано.",
+      "tokens": 84,
+      "hit_limit": false,
+      "seconds": 3.9864986520000087,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F037-no-context",
+      "answer": "Факт: Комариные плеши — это тип пыли, образующийся в результате разложения комаров. В контексте романа «Пикник на обочине» не указано, что комариные плеши имеют особое значение или связаны с персонажами или событиями в романе.",
+      "tokens": 76,
+      "hit_limit": false,
+      "seconds": 3.448886827000024,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F040-q1-grounded",
+      "answer": "Да, высказывается версия, что контакт ещё продолжается. В тексте упоминается, что Стервятник \"всё до феньки\" и что контакт с инопланетными существами продолжается. Также упоминается, что Стервятник \"смотрит\" через Зону, и что контакт \"не подозревает\" об этом.",
+      "tokens": 90,
+      "hit_limit": false,
+      "seconds": 4.244614365000018,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F040-q2-grounded",
+      "answer": "Факт: В контексте текста не указано, что продолжаетеся присутствие пришельцев является доказанным фактом. В тексте упоминается, что \"мы сейчас находимся в состоянии контакта, только не подозреваем об этом\", но это не является официальным доказательством или подтверждением. Также не говорится, что пришельцы продолжают присутствовать в Зонах Посещения.",
+      "tokens": 108,
+      "hit_limit": false,
+      "seconds": 5.101980517000015,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F040-no-context",
+      "answer": "В предоставленном контексте нет информации о том, выявляется ли версия, что контакт ещё продолжается. Следовательно, факта о этом нет в данном тексте.",
+      "tokens": 44,
+      "hit_limit": false,
+      "seconds": 2.020047071000022,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F042-q1-grounded",
+      "answer": "В контексте предоставленного текста не указано, кто сопровождает Рэдрика в последнем походе. В тексте отсутствуют данные о сопровождающих людях.",
+      "tokens": 50,
+      "hit_limit": false,
+      "seconds": 2.457672076000023,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F042-q2-grounded",
+      "answer": "В контексте предоставленного PDF не указано, с кем Шухарт идёт к Золотому шару. Следует отметить, что в тексте не приводится информации о том, кто Шухарт встречает к Золотому шару.",
+      "tokens": 64,
+      "hit_limit": false,
+      "seconds": 3.0442617719999987,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F042-no-context",
+      "answer": "В контексте предоставленного текста не указано, кто сопровождает Рэдрика в последнем походе.",
+      "tokens": 31,
+      "hit_limit": false,
+      "seconds": 1.4017964989999996,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "unknown-1",
+      "answer": "Корабль посетителей в романе «Пикник на обочине» называется **«Метрополем»**. Это упоминается в контексте описания местности и посещаемых объектов в начале книги.",
+      "tokens": 62,
+      "hit_limit": false,
+      "seconds": 3.018964624000006,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "unknown-2",
+      "answer": "В контексте предоставленного текста не указано, сколько членов экипажа было на корабле посетителей. Статьи не содержат информации о количестве членов экипажа на корабле посетителей.",
+      "tokens": 61,
+      "hit_limit": false,
+      "seconds": 2.866649975999991,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    }
+  ]
+}

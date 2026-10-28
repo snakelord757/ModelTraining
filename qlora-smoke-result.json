@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "sequence_length": 512,
+  "batch_size": 1,
+  "lora_rank": 8,
+  "steps_requested": 3,
+  "steps": [
+    {
+      "step": 1,
+      "loss": 6.674903392791748,
+      "gradient_norm": 992.8219604492188,
+      "seconds": 106.76579249899999
+    },
+    {
+      "step": 2,
+      "loss": 3.4863693714141846,
+      "gradient_norm": 783.1320190429688,
+      "seconds": 4.89218637700003
+    },
+    {
+      "step": 3,
+      "loss": 2.0631487369537354,
+      "gradient_norm": 1026.5714111328125,
+      "seconds": 1.5847517759999619
+    }
+  ],
+  "checkpoint_read_backend": "pread",
+  "load_seconds": 134.86406235599998,
+  "loaded_allocated_gib": 7.124038219451904,
+  "trainable_parameters": 32784384,
+  "parameter_devices": [
+    "cuda:0"
+  ],
+  "quantization_config": {
+    "bnb_4bit_compute_dtype": "torch.bfloat16",
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "llm_int8_enable_fp32_cpu_offload": false,
+    "llm_int8_has_fp16_weight": false,
+    "llm_int8_skip_modules": [
+      "lm_head",
+      "multi_modal_projector",
+      "merger",
+      "modality_projection",
+      "mm_projector",
+      "router",
+      "mlp.gate",
+      "block_sparse_moe.gate",
+      "moe.gate",
+      "mamba",
+      "audio_tower",
+      "vision_tower",
+      "visual",
+      "vision_embedder",
+      "embed_vision",
+      "embed_audio",
+      "score",
+      "classifier",
+      "qa_outputs"
+    ],
+    "llm_int8_threshold": 6.0,
+    "load_in_4bit": true,
+    "load_in_8bit": false,
+    "quant_method": "bitsandbytes"
+  },
+  "peak_allocated_gib": 7.644071578979492,
+  "peak_reserved_gib": 7.81640625,
+  "total_seconds": 250.845776812,
+  "free_gpu_gib_at_end": 6.92578125
+}

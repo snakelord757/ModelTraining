@@ -1,0 +1,48 @@
+Gemma QLoRA environment
+
+Verified 2026-10-27:
+  Python 3.12.3
+  PyTorch 2.11.0+cu128; Transformers 5.17.0; PEFT 0.21.2
+  TRL 1.15.0; bitsandbytes 0.50.2; Unsloth 2026.10.9
+  pip check: PASS
+  GPU: RTX 5060 Ti, 16311 MiB, compute capability 12.0
+  BF16 supported; CUDA matrix backward: PASS; NF4 backward: PASS
+  Transformers gemma4_unified architecture: PASS
+
+Current WSL RAM limit is approximately 16 GiB, with 4 GiB swap.
+Text-only Gemma 4 12B QLoRA smoke test PASSED (3 synthetic steps, 512 tokens,
+batch 1, rank 8, NF4 double quantization, BF16, Unsloth gradient checkpointing).
+Peak PyTorch allocated: 7.644 GiB; peak reserved: 7.816 GiB.
+GPU free at end of training: 6.926 GiB. All model parameters on cuda:0.
+Unsloth enabled gradient offloading. Optimizer updates and finite gradients verified.
+This is a capacity test, not a dataset quality test or a long-context benchmark.
+The single checkpoint needs pread instead of mmap on this WSL/DrvFS setup;
+the smoke script applies a process-local override, leaving installed libraries unchanged.
+Report: qlora-smoke-result.json; script: qlora_smoke_test.py
+
+WSL distribution: GemmaTraining (Ubuntu 24.04, WSL2)
+Virtual disk: D:\ModelTraining\wsl\GemmaTraining
+Linux user: trainer
+Virtual environment: /home/trainer/gemma-qlora/.venv
+Windows project directory in Linux: /mnt/d/ModelTraining
+Default Hugging Face cache: /home/trainer/.cache/huggingface (inside the virtual disk on D:)
+
+Open from PowerShell:
+  .\enter-training.ps1
+Or:
+  wsl -d GemmaTraining -u trainer
+  source /home/trainer/gemma-qlora/.venv/bin/activate
+
+Repeat environment check from PowerShell:
+  wsl -d GemmaTraining -u trainer -- /home/trainer/gemma-qlora/.venv/bin/python /mnt/d/ModelTraining/check_training.py
+
+Installation log: setup-training.log
+Resolved versions after successful setup: requirements-resolved.txt
+
+No model weights or user dataset are downloaded by setup-training.sh.
+Subsequent context tests passed 2048, 4096, 8192, 12288 and 16384 tokens.
+Working training limit is now 12288, covering every source example without truncation.
+At 12288: peak allocated 11.63 GiB, reserved 12.95 GiB, free at end ~1.57 GiB.
+16384 leaves only ~0.18 GiB free; 32768 was stopped for VRAM/RAM pressure.
+See TRAINING-USAGE.txt and context-probe-12288.json for settings and limitations.
+Do not delete or move a registered WSL virtual disk as an ordinary project file.

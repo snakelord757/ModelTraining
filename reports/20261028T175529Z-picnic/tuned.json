@@ -1,0 +1,296 @@
+{
+  "phase": "tuned",
+  "adapter": "/mnt/d/ModelTraining/outputs/qwen-picnic-grounded-v1/adapter",
+  "settings": {
+    "max_new_tokens": 384,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.0
+  },
+  "seed": 3407,
+  "suite_sha256": "4e3f816c98422267397c4c8a956127666a3ac157aca1b8fb08617359638bb034",
+  "answers": [
+    {
+      "id": "F025-q1-grounded",
+      "answer": "Мартышка обладает необычной особенностью — она имеет темные, без белковые глаза. Это упоминается в контексте PDF, с. 33.",
+      "tokens": 46,
+      "hit_limit": false,
+      "seconds": 9.894287685999984,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F025-q2-grounded",
+      "answer": "В контексте предоставленного PDF на странице 55 говорится, что Нунан увидел Валентина в «Боржче», но не упоминается конкретная информация о покрытии спины дочери Шухарта. Следовательно, факта о покрытии спины дочери Шухарта не существует в предоставленном контексте.",
+      "tokens": 92,
+      "hit_limit": false,
+      "seconds": 7.284657647000017,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F025-no-context",
+      "answer": "В контексте романа «Пикник на обочине» не указано, какая необычная особенность обладает Мартышка. В предоставленном тексте не содержится информации о её характере или особенностях.",
+      "tokens": 56,
+      "hit_limit": false,
+      "seconds": 4.729884771999991,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F028-q1-grounded",
+      "answer": "Мясник — опытный и модный хирург, специализирующийся на нечеловеческих заболеваниях, включая нечеловеческие уродства и повреждения человеческого организма. Он известен как лекарь, брал знания, славу и деньги, и был известен в медицине не только в городе, но и в Зоне. Он участвовал в операциях, включая лечение Барбриджа.",
+      "tokens": 119,
+      "hit_limit": false,
+      "seconds": 9.51126959200002,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F028-q2-grounded",
+      "answer": "Рэдрик привозит раненого сталкера Мяснику.",
+      "tokens": 21,
+      "hit_limit": false,
+      "seconds": 1.801444382999989,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F028-no-context",
+      "answer": "В предоставленном контексте нет информации о профессии Мясника. Следовательно, факта о его профессии не существует.",
+      "tokens": 34,
+      "hit_limit": false,
+      "seconds": 2.62677718599997,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F036-q1-grounded",
+      "answer": "Нунан называет Мартышку по имени «Мартышка».",
+      "tokens": 18,
+      "hit_limit": false,
+      "seconds": 1.5843393380000066,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F036-q2-grounded",
+      "answer": "В третьей главе указано, что имя дочери Шухарта звучит как **Нунан**. Это упоминается в тексте, где говорится: «Нунан, подобрав свои тряпки, испарилась. — Закрой-ка дверь на ключ, голубчик, — сказал Нунан. Мосол, плоскос топо бухая ножищами, подбежал к двери, щелкнул ключом и вернулся к столу. Он волосатой горой возвышался над столом, преданно глядя на Нунана. Нунан рассматривал его через прищуренные веки. почему-то он вспомнил, что настоящее имя Мосла Катюши — Рафаэль. Мослом его прозвали за чудовищные костлявые кулаки, сизо-красные и голые, торчащие из густой шерсти, покрывающей его руки, словно из манжет. Катюшей же он назвал себя сам в полной уверенности, что это традиционное имя великих монгольских царей. Рафаэль. Ну ч то ж, Рафаэль. Начнем. — Как дела? — спросил он, ласково улыбаясь. — В полном порядке, босс, — поспешно ответствовал Рафаэль -Мосол и потрогал болячку на носу. — Тот скандал уладил в комендатуре? — У",
+      "tokens": 384,
+      "hit_limit": true,
+      "seconds": 29.48996040100002,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F036-no-context",
+      "answer": "В контексте романа «Пикник на обочине» не указано, как Нунан называет Мартышку по имени. Следовательно, факта о этом нет в предоставленном тексте.",
+      "tokens": 52,
+      "hit_limit": false,
+      "seconds": 3.9956603210000026,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F037-q1-grounded",
+      "answer": "В контексте романа «Пикник на обочине» в предоставленном PDF, комариные плеши — это место, которое описывается как «комариная плешь», то есть место, где комары, вероятно, много питаются, и это может быть место с высоким уровнем комаров. Это место описывается как «комариная плешь» в тексте, и оно является ключевым местом в сюжете романа. Оно является местом, где происходит действие, и оно связано с физическим и эмоциональным переживанием персонажей.",
+      "tokens": 150,
+      "hit_limit": false,
+      "seconds": 11.723100729999999,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F037-q2-grounded",
+      "answer": "Нунан объясняет комариные плеши Пильману, что они — это области повышенной гравитации, направленная гравитация. Он также упоминает, что «ведьмин студень» вероятно является коллоидным газом, но неясно, почему это так. Нунан подчеркивает, что эти плеши — это загадочное явление, и что они могут быть связаны с военно-промышленными комплексами, но не уверен, что это имело отношение к пришельцам.",
+      "tokens": 132,
+      "hit_limit": false,
+      "seconds": 10.261263228999951,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F037-no-context",
+      "answer": "В предоставленном контексте нет информации о комариных плеших. Статьи и тексты, которые вы предоставили, не содержат данных о данном термине. Таким образом, факты о комариных плеших не могут быть предоставлены.",
+      "tokens": 60,
+      "hit_limit": false,
+      "seconds": 4.580506840999988,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F040-q1-grounded",
+      "answer": "В контексте предоставленного текста высказывается версия, что контакт с инопланетными существами продолжается. В частности, в диалоге между Нунаном и Валентином упоминается, что «мы сейчас находимся в состоянии контакта, только не подозреваем об этом». Также упоминается, что Стервятник Барбридж «переменил специальность» и «торгует, по-видимому, своей дочерью», что может быть интерпретировано как признак продолжения контакта. Таким образом, в тексте высказывается версия, что контакт ещё продолжается.",
+      "tokens": 155,
+      "hit_limit": false,
+      "seconds": 11.854951513999993,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F040-q2-grounded",
+      "answer": "В контексте предоставленного текста не указано, что продолжающееся присутствие пришельцев является доказанным фактом. В тексте упоминается, что пришельцы \"угнездились в Зонах\" и \"тщательно нас изучают\", но это описывается как гипотетическая ситуация, а не как фактическое доказательство. Также не упоминается, что пришельцы продолжают присутствовать в Зонах Посещения. Следовательно, факт продолжающегося присутствия пришельцев не является доказанным в тексте.",
+      "tokens": 153,
+      "hit_limit": false,
+      "seconds": 11.769819310000003,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F040-no-context",
+      "answer": "В предоставленном контексте нет информации о том, продолжается ли контакт или нет. Отсутствует данные, позволяющая судить о данном вопросе.",
+      "tokens": 34,
+      "hit_limit": false,
+      "seconds": 2.5777973520000046,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F042-q1-grounded",
+      "answer": "Рэдрик в последнем походе сопровождается Диной.",
+      "tokens": 21,
+      "hit_limit": false,
+      "seconds": 1.7518633569999906,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F042-q2-grounded",
+      "answer": "В контексте предоставленного PDF не указано, с кем Шухарт идёт к Золотому шару. Следует отметить, что в тексте не приводится информации о том, кто Шухарт встречает к Золотому шару.",
+      "tokens": 64,
+      "hit_limit": false,
+      "seconds": 5.000139581999974,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F042-no-context",
+      "answer": "В контексте предоставленного PDF не указано, кто сопровождает Рэдрика в последнем походе. Следовательно, факта о данном вопросе не существует в данном тексте.",
+      "tokens": 50,
+      "hit_limit": false,
+      "seconds": 3.895879382999965,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "unknown-1",
+      "answer": "Корабль посетителей в романе «Пикник на обочине» называется **«Метрополем»**. Это упоминается в контексте описания местности, где находится место действия романа.",
+      "tokens": 57,
+      "hit_limit": false,
+      "seconds": 4.565362292000032,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "unknown-2",
+      "answer": "В контексте предоставленного текста не указано, сколько членов экипажа было на корабле посетителей. Ответ на этот вопрос не доступен из предоставленного материала.",
+      "tokens": 46,
+      "hit_limit": false,
+      "seconds": 3.6516240930000095,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    }
+  ]
+}

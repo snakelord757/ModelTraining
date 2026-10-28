@@ -1,0 +1,60 @@
+{
+  "sft": {
+    "train": {
+      "rows": 68,
+      "max_tokens": 184,
+      "median_tokens": 159.0,
+      "over_12288": 0
+    },
+    "validation": {
+      "rows": 30,
+      "max_tokens": 169,
+      "median_tokens": 154.0,
+      "over_12288": 0
+    },
+    "test": {
+      "rows": 12,
+      "max_tokens": 170,
+      "median_tokens": 157.5,
+      "over_12288": 0
+    }
+  },
+  "grounded": {
+    "train": {
+      "rows": 94,
+      "max_tokens": 3260,
+      "median_tokens": 1211.5,
+      "over_12288": 0
+    },
+    "validation": {
+      "rows": 45,
+      "max_tokens": 1842,
+      "median_tokens": 1617,
+      "over_12288": 0
+    },
+    "test": {
+      "rows": 18,
+      "max_tokens": 1743,
+      "median_tokens": 1530.0,
+      "over_12288": 0
+    }
+  },
+  "retrieval_tests": [
+    {
+      "query": "Герберт",
+      "expected_page": 47,
+      "found": true
+    },
+    {
+      "query": "комариные AND плеши",
+      "expected_page": 59,
+      "found": true
+    },
+    {
+      "query": "Арчибальд*",
+      "expected_page": 68,
+      "found": true
+    }
+  ],
+  "status": "passed"
+}

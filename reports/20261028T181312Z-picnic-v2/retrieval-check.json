@@ -1,0 +1,12 @@
+{
+  "train": {
+    "questions": 48,
+    "expected_page_hits": 30,
+    "old_expected_page_hits": 27
+  },
+  "validation": {
+    "questions": 30,
+    "expected_page_hits": 15,
+    "old_expected_page_hits": 9
+  }
+}

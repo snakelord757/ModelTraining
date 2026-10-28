@@ -1,0 +1,28 @@
+{
+  "splits": {
+    "train": {
+      "rows": 170,
+      "refusals": 58,
+      "topics": 21
+    },
+    "validation": {
+      "rows": 53,
+      "refusals": 23,
+      "topics": 4
+    },
+    "test": {
+      "rows": 18,
+      "refusals": 6,
+      "topics": 5
+    }
+  },
+  "seed": 3407,
+  "source": "user PDF only",
+  "source_sha256": "106cc22421fdf3309d9c97f29ba3f30f60f8bf403384d85b9dc40c5b74682f78",
+  "notes": [
+    "Original topic split preserved.",
+    "Augmented examples share the original fact/topic split.",
+    "Hard negatives request unsupported dates, quantities or identifiers; absence means absence in supplied context, not in the whole work.",
+    "Old ship-name diagnostic overlaps training and is not an unseen test."
+  ]
+}

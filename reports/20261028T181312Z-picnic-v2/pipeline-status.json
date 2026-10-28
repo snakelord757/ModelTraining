@@ -1,0 +1,8 @@
+{
+  "stage": "completed",
+  "output": "/mnt/d/ModelTraining/outputs/qwen-picnic-grounded-v2",
+  "report_directory": "/mnt/d/ModelTraining/reports/20261028T181312Z-picnic-v2",
+  "elapsed_seconds": 844.468647841,
+  "report": "/mnt/d/ModelTraining/reports/20261028T181312Z-picnic-v2/report.html",
+  "training_seconds": 426.22834451100005
+}

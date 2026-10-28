@@ -1,0 +1,88 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><title>Пикник: датасет</title><style>body{font:16px system-ui;max-width:1100px;margin:32px auto}td,th{padding:10px;border:1px solid #ddd;vertical-align:top}table{border-collapse:collapse}pre{white-space:pre-wrap}</style>
+<h1>Справочник по предоставленному PDF</h1><p>Только роман. Спойлеры. Нумерация — страницы PDF от 1 до 83. Персонаж в этой версии: Арчибальд Барбридж.</p>
+<p>Начальный проверенный набор, не полная энциклопедия. Для справочника рекомендуются контекстные примеры grounded вместе с поиском по retrieval_chunks.jsonl. Старые источники из интернета не используются в выходных ссылках.</p>
+<pre>{
+  &quot;source_sha256&quot;: &quot;106cc22421fdf3309d9c97f29ba3f30f60f8bf403384d85b9dc40c5b74682f78&quot;,
+  &quot;source_pages&quot;: 83,
+  &quot;facts&quot;: 55,
+  &quot;sft&quot;: {
+    &quot;train&quot;: 68,
+    &quot;validation&quot;: 30,
+    &quot;test&quot;: 12
+  },
+  &quot;grounded&quot;: {
+    &quot;train&quot;: 94,
+    &quot;validation&quot;: 45,
+    &quot;test&quot;: 18
+  },
+  &quot;retrieval_chunks&quot;: 224,
+  &quot;status&quot;: &quot;seed_dataset_not_exhaustive&quot;,
+  &quot;checks&quot;: [
+    &quot;unique ids, nonempty messages, valid PDF pages, disjoint topics&quot;,
+    &quot;unique ids, nonempty messages, valid PDF pages, disjoint topics&quot;
+  ],
+  &quot;limitations&quot;: [
+    &quot;Edition-specific names: Archibald, not Arthur.&quot;,
+    &quot;Page 3,24,45,68 contain section boundaries; section labels use page starts and may include preceding text.&quot;,
+    &quot;PDF text extraction can contain spacing/recognition artifacts; original PDF is authoritative.&quot;,
+    &quot;Closed-book held-out topics test unseen knowledge; use grounded evaluation to test reading and refusal.&quot;,
+    &quot;Retrieval corpus intentionally contains held-out facts: retrieval access is not SFT training leakage.&quot;,
+    &quot;Automatic checks validate structure, not every semantic claim. This is a curated starting set, not a complete fan wiki.&quot;
+  ]
+}</pre><table><tr><th>ID / часть</th><th>Вопрос</th><th>Ответ</th><th>Тип / страницы</th></tr>
+<tr><td>F001 / train</td><td>Как зовут учёного из пролога?</td><td>Доктор Валентин Пильман.</td><td>fact / 1</td></tr>
+<tr><td>F002 / train</td><td>Какой премии удостоен Пильман в прологе?</td><td>Нобелевской премии по физике.</td><td>fact / 1</td></tr>
+<tr><td>F003 / train</td><td>Какой город для Пильмана родной?</td><td>Хармонт.</td><td>fact / 1,2</td></tr>
+<tr><td>F004 / train</td><td>Сколько Зон Посещения названо в прологе?</td><td>В прологе указаны шесть Зон Посещения.</td><td>fact / 1</td></tr>
+<tr><td>F005 / train</td><td>С какой звездой связано описание радианта Пильмана?</td><td>С Денебом, альфой созвездия Лебедя.</td><td>fact / 1</td></tr>
+<tr><td>F006 / train</td><td>Кто, по Пильману, первым обнаружил радиант?</td><td>Пильман называет первооткрывателем школьника, имя которого не помнит.</td><td>fact / 1</td></tr>
+<tr><td>F007 / train</td><td>Кто впервые опубликовал координаты радианта?</td><td>По словам Пильмана, координаты впервые опубликовал студент.</td><td>fact / 1</td></tr>
+<tr><td>F008 / train</td><td>Что Пильман считает главным научным результатом Посещения?</td><td>Уверенность человечества, что оно не единственное разумное сообщество во Вселенной.</td><td>attributed / 2</td></tr>
+<tr><td>F009 / validation</td><td>Что означает КОПРОПО?</td><td>Комиссия ООН по проблемам Посещения.</td><td>fact / 2</td></tr>
+<tr><td>F010 / train</td><td>Кого в Хармонте называют сталкерами?</td><td>Они рискуют жизнью, проникая в Зону ради добычи необычных предметов.</td><td>fact / 2</td></tr>
+<tr><td>F011 / validation</td><td>Сколько лет Шухарту в первой главе?</td><td>Рэдрику Шухарту 23 года.</td><td>fact / 3</td></tr>
+<tr><td>F012 / validation</td><td>Кем Шухарт работает в первой главе?</td><td>Лаборантом хармонтского филиала МИВК.</td><td>fact / 3</td></tr>
+<tr><td>F013 / validation</td><td>Женат ли Рэдрик в первой главе?</td><td>В первой главе он холост.</td><td>fact / 3</td></tr>
+<tr><td>F014 / validation</td><td>Как расшифровать МИВК?</td><td>Международный институт внеземных культур.</td><td>fact / 3</td></tr>
+<tr><td>F015 / validation</td><td>Кто такой Тендер?</td><td>Тендер — лаборант Кирилла.</td><td>fact / 4</td></tr>
+<tr><td>F016 / train</td><td>Какие предметы изучает Кирилл в начале первой главы?</td><td>Он исследует артефакты, которые называют пустышками.</td><td>fact / 3,4</td></tr>
+<tr><td>F017 / train</td><td>Как выглядит пустышка?</td><td>Два медных диска удерживаются на расстоянии без видимого соединения.</td><td>fact / 3</td></tr>
+<tr><td>F018 / train</td><td>Какую массу пустышки называет Рэдрик?</td><td>Шесть с половиной килограммов.</td><td>fact / 3</td></tr>
+<tr><td>F019 / validation</td><td>Кто задевает серебристую паутину?</td><td>Кирилл задевает паутину спиной.</td><td>fact / 13</td></tr>
+<tr><td>F020 / train</td><td>Кого прозвали Стервятником?</td><td>Барбридж.</td><td>fact / 41,49</td></tr>
+<tr><td>F021 / validation</td><td>Сколько лет Шухарту во второй главе?</td><td>Рэдрику Шухарту 28 лет.</td><td>fact / 24</td></tr>
+<tr><td>F022 / validation</td><td>Каково семейное положение Шухарта во второй главе?</td><td>Во второй главе он женат.</td><td>fact / 24</td></tr>
+<tr><td>F023 / validation</td><td>Как обозначено занятие Рэдрика во второй главе?</td><td>Заголовок указывает отсутствие определённых занятий.</td><td>fact / 24</td></tr>
+<tr><td>F025 / test</td><td>Какой необычной особенностью обладает Мартышка?</td><td>Её тело покрыто шерстью.</td><td>fact / 31</td></tr>
+<tr><td>F026 / validation</td><td>Какова фамилия Кирилла?</td><td>Кирилл А. Панов.</td><td>fact / 31</td></tr>
+<tr><td>F027 / validation</td><td>Какая страна указана рядом с именем Кирилла Панова?</td><td>СССР.</td><td>fact / 31</td></tr>
+<tr><td>F028 / test</td><td>Кто такой Мясник по профессии?</td><td>Мясник — опытный хирург.</td><td>fact / 30</td></tr>
+<tr><td>F029 / train</td><td>Что повредило ноги Барбриджа?</td><td>Он попал в ведьмин студень.</td><td>fact / 30</td></tr>
+<tr><td>F030 / train</td><td>Кто доставляет Барбриджа в клинику?</td><td>Рэдрик Шухарт.</td><td>fact / 30</td></tr>
+<tr><td>F031 / train</td><td>Сколько лет Нунану в третьей главе?</td><td>Нунану 51 год.</td><td>fact / 45</td></tr>
+<tr><td>F032 / train</td><td>Что означает буква Г. в имени Нунана?</td><td>Герберт.</td><td>fact / 47</td></tr>
+<tr><td>F033 / train</td><td>Какова официальная должность Нунана?</td><td>Представитель поставщиков электронного оборудования.</td><td>fact / 45</td></tr>
+<tr><td>F034 / validation</td><td>Что такое этак?</td><td>Необычный аккумулятор, описываемый как вечный.</td><td>fact / 51</td></tr>
+<tr><td>F035 / validation</td><td>Какое свойство этаков особенно удивило людей?</td><td>В романе сообщается, что они размножаются.</td><td>fact / 59</td></tr>
+<tr><td>F036 / test</td><td>Как Нунан называет Мартышку по имени?</td><td>Мария.</td><td>fact / 63</td></tr>
+<tr><td>F037 / test</td><td>Что такое комариные плеши?</td><td>Участки с повышенной гравитацией.</td><td>fact / 59</td></tr>
+<tr><td>F038 / train</td><td>Как Пильман объясняет Посещение через образ пикника?</td><td>Возможно, находки — случайно оставленные пришельцами вещи, а не послание людям.</td><td>hypothesis / 57,58</td></tr>
+<tr><td>F039 / train</td><td>Доказана ли гипотеза пикника?</td><td>Нет. Пильман прямо представляет его как предположение.</td><td>hypothesis / 58</td></tr>
+<tr><td>F040 / test</td><td>Высказывается ли версия, что контакт ещё продолжается?</td><td>Такая версия обсуждается, но её истинность не установлена.</td><td>hypothesis / 58</td></tr>
+<tr><td>F041 / validation</td><td>Сколько лет Рэдрику в последней главе?</td><td>Рэдрику Шухарту 31 год.</td><td>fact / 68</td></tr>
+<tr><td>F042 / test</td><td>Кто сопровождает Рэдрика в последнем походе?</td><td>С Арчибальдом Барбриджем.</td><td>fact / 68</td></tr>
+<tr><td>F043 / train</td><td>Где находится Золотой Шар?</td><td>В карьере, возле его дальней стены.</td><td>fact / 81</td></tr>
+<tr><td>F044 / train</td><td>Какого цвета Шар при непосредственном осмотре?</td><td>Он выглядит красноватым, скорее медным, чем золотым.</td><td>fact / 81</td></tr>
+<tr><td>F045 / train</td><td>Какие желания, по Рэдрику, исполняет Шар?</td><td>Рэдрик говорит о самых сокровенных желаниях; это слова персонажа.</td><td>attributed / 72</td></tr>
+<tr><td>F046 / train</td><td>Что происходит с Арчибальдом перед Шаром?</td><td>Арчибальд погибает в мясорубке.</td><td>fact / 77,82</td></tr>
+<tr><td>F047 / train</td><td>С чем Рэдрик связывает необходимость последнего похода?</td><td>Он надеется помочь своей дочери Мартышке.</td><td>attributed / 74</td></tr>
+<tr><td>F048 / train</td><td>Показано ли исполнение последнего желания Рэдрика?</td><td>Нет. Результат обращения к Шару в тексте не показан.</td><td>unknown / 83</td></tr>
+<tr><td>F049 / train</td><td>Как кратко описать направленность финального желания?</td><td>К благополучию всех людей; это краткая интерпретация финала.</td><td>interpretation / 82,83</td></tr>
+<tr><td>F050 / train</td><td>Доказывает ли радиант, что пришельцы родом с Денеба?</td><td>Нет. Направление радианта само по себе не устанавливает родину пришельцев.</td><td>unknown / 1</td></tr>
+<tr><td>F051 / train</td><td>За какой точный год Пильман получает премию?</td><td>Полный год не указан: последние цифры заменены точками.</td><td>unknown / 1</td></tr>
+<tr><td>F052 / train</td><td>В какой игровой группировке состоял Рэдрик?</td><td>Ответа по роману нет. Игровые сведения не входят в этот справочник.</td><td>out_of_scope / </td></tr>
+<tr><td>F053 / train</td><td>Кто из актёров сыграл Пильмана?</td><td>Экранизации вне области этого справочника; он использует только роман.</td><td>out_of_scope / </td></tr>
+<tr><td>F054 / train</td><td>Что случилось с Рэдриком в фанатском продолжении?</td><td>Фанатские продолжения не используются как источник сведений о романе.</td><td>out_of_scope / </td></tr>
+<tr><td>F055 / train</td><td>Как называется корабль посетителей?</td><td>В романе такое название не установлено; придумывать его нельзя.</td><td>unknown / 2</td></tr>
+<tr><td>F056 / train</td><td>Как называется вид пришельцев?</td><td>Подтверждённое название вида пришельцев в тексте отсутствует.</td><td>unknown / 2</td></tr>
+</table></html>

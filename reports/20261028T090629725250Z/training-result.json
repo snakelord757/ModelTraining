@@ -1,0 +1,60 @@
+{
+  "status": "completed",
+  "model_id": "Qwen/Qwen3-1.7B",
+  "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "preparation": {
+    "model_id": "Qwen/Qwen3-1.7B",
+    "max_length": 4096,
+    "train_samples": 1000,
+    "splits": {
+      "train": {
+        "source_rows": 8018,
+        "kept_rows": 260,
+        "truncated_rows": 0,
+        "skipped_long_rows": 7758,
+        "no_target_rows": 0,
+        "invalid_rows": 0,
+        "target_tokens": 700231,
+        "eligible_rows": 260
+      },
+      "validation": {
+        "source_rows": 708,
+        "kept_rows": 24,
+        "truncated_rows": 0,
+        "skipped_long_rows": 684,
+        "no_target_rows": 0,
+        "invalid_rows": 0,
+        "target_tokens": 68510,
+        "eligible_rows": 24
+      },
+      "test": {
+        "source_rows": 708,
+        "kept_rows": 19,
+        "truncated_rows": 0,
+        "skipped_long_rows": 689,
+        "no_target_rows": 0,
+        "invalid_rows": 0,
+        "target_tokens": 47711,
+        "eligible_rows": 19
+      }
+    },
+    "loss": "Assistant turn only; prompt labels are -100",
+    "truncation": "Skip overlength examples, never truncate; seed 3407 sample; never train on validation/test"
+  },
+  "training_seconds": 239.6266701379999,
+  "total_seconds": 269.5099902589999,
+  "global_step": 33,
+  "epoch": 1.0,
+  "requested_epochs": 1.0,
+  "max_steps": -1,
+  "resume_from": null,
+  "metrics": {
+    "train_runtime": 262.018,
+    "train_samples_per_second": 0.992,
+    "train_steps_per_second": 0.126,
+    "total_flos": 6198187759239168.0,
+    "train_loss": 2.8132521094697895,
+    "epoch": 1.0
+  },
+  "timing_scope": "This invocation of trainer.train; includes checkpoint saving, excludes initial loading and final adapter saving."
+}

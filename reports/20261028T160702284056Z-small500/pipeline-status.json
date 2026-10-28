@@ -1,0 +1,8 @@
+{
+  "stage": "completed",
+  "model_id": "Qwen/Qwen3-1.7B",
+  "output": "/mnt/d/ModelTraining/outputs/qwen-selected-500-v1",
+  "report_directory": "/mnt/d/ModelTraining/reports/20261028T160702284056Z-small500",
+  "elapsed_seconds": 1616.146397533,
+  "report": "/mnt/d/ModelTraining/reports/20261028T160702284056Z-small500/report.html"
+}

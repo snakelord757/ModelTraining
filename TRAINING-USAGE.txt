@@ -1,0 +1,114 @@
+NEW SMALL EXPERIMENT: D:\ModelTraining\start-small-experiment.ps1
+Fresh Qwen, 500 heuristically filtered whole examples, 32 held-out validation examples.
+Maximum 6000 tokens, learning rate 2e-5, one epoch, about 63 optimizer steps.
+Selection manifest: data/qwen-selected-500-v1/preparation.json.
+Initial/final validation and validation every 20 steps; checkpoints retained for comparison.
+Reports compare steps 20, 40 and final on the same 20 diagnostic prompts.
+Generation now uses sampling (temperature .7, top_p .8, top_k 20), same seed per prompt.
+Baseline is regenerated with identical settings; old greedy reports are not directly comparable.
+Repetition detection is now included in the automatic checks.
+Output: outputs/qwen-selected-500-v1. Previous full adapter remains unchanged.
+No claim of improved quality until the results are reviewed.
+
+PREVIOUS FULL RUN: Qwen/Qwen3-1.7B, fresh 12k training run.
+Model: D:\ModelTraining\models\Qwen3-1.7B
+Run: D:\ModelTraining\start-training.ps1
+One epoch, no sample limit, 12288-token context, seed 3407.
+Overlength examples are skipped, not truncated. Qwen's own tokenizer/chat template is used.
+Thinking disabled for training and both evaluations. QLoRA rank 8, batch 1, accumulation 8.
+Old 260-example adapter and its checkpoints were deleted at the user's request.
+New adapter starts from the original Qwen weights; no resume or previous LoRA loading.
+Checkpoints every 25 steps, keep 2.
+Adapter: outputs/qwen3-1.7b-literature-12k/adapter
+Training metadata/time: outputs/qwen3-1.7b-literature-12k/training-result.json
+Prepared data: data/prepared-qwen3-1.7b-whole-12288-0
+Verified coverage: all 8018 train, 708 validation and 708 test examples fit without truncation.
+Longest source: 10872 Qwen tokens. Training target tokens: 41071451. One epoch: 1003 steps.
+VRAM preflight report: qwen-12k-probe.json (2 optimizer steps, 8 microbatches each).
+Baseline and tuned model each answer the same 20 prompts; report includes training time.
+Reports: reports/<run-id>/report.html. Overall state: pipeline-status.json.
+The same PowerShell window shows progress, training timer and ETA.
+Override sample limit: -TrainSamples 500; use -TrainSamples 0 for all eligible examples.
+Repeat evaluation only: -EvaluateOnly. Resume (only if explicitly wanted): -Resume /mnt/d/ModelTraining/outputs/qwen3-1.7b-literature-12k/checkpoint-25
+Gemma training weights (23,919,549,408 bytes) were deleted at user's request.
+Original LM Studio GGUF was not removed. Prior Gemma reports are retained.
+
+Historical Gemma configuration below; its paths/defaults no longer apply to the launcher.
+Dataset: ViliamVolosV/russian_classic_literature
+Revision: f22eae2c0d8705d6c7642e90d60d1f809b79e448
+Original JSONL: D:\ModelTraining\data\russian_classic_literature
+Prepared datasets: D:\ModelTraining\data\prepared-literature-12288
+
+Run the full pipeline in PowerShell (base comparison -> actual GPU training -> adapter comparison -> report):
+  D:\ModelTraining\start-training.ps1
+
+Short real-dataset run instead:
+  D:\ModelTraining\start-training.ps1 -MaxSteps 3
+
+In a second PowerShell window, show the live status:
+  D:\ModelTraining\watch-training.ps1
+
+The main training terminal shows one live progress line, updated every second:
+percent, optimizer steps, Training HH:MM:SS, ETA, Total HH:MM:SS and loss.
+No separate monitoring window is needed. Training time freezes when saving starts.
+training-status.json is updated every second. Percent is completed optimizer steps
+divided by scheduled optimizer steps. The training timer starts after model/data loading.
+A separate total timer includes preparation. ETA is an estimate including first-run
+compilation; it becomes more representative as training progresses.
+100% of steps does not mean saving is complete: wait for stage=completed.
+The monitor warns if the heartbeat becomes stale. Stop the monitor with Ctrl+C.
+
+Defaults: 1 epoch, maximum sequence length 12288, batch size 1, gradient accumulation 8,
+LoRA rank 8, alpha 16, NF4 double quantization, BF16, learning rate 1e-4.
+These are conservative starting settings, not a quality-tuned recipe.
+All 9,434 source conversations fit at 12288: zero truncated examples.
+Actual sequence lengths vary; examples are not padded to the maximum context.
+Maximum measured source length including chat template: 10290 tokens.
+Override context from PowerShell with -MaxLength, e.g. -MaxLength 8192.
+The original prepared-literature-512 folder is retained but is not the default.
+Source messages are preserved. Prompts are masked out of the training loss.
+Validation and test splits are kept separate and are NOT used for training.
+The launcher now runs automatic before/after evaluation on 20 fixed custom prompts.
+Eight literary prompts and twelve factual/instruction tasks are in evaluation_prompts.json.
+The exact suite is copied into reports/<UTC-run-id>/prompts.json before execution.
+Models run sequentially in separate processes: base first, then training, then adapter.
+Both evaluations use the same 4-bit base loader, greedy decoding and 768-token response limit.
+Reports: reports/<UTC-run-id>/report.html and comparison.json.
+Raw responses: base.json and tuned.json in the same folder, saved after every response.
+Report includes training time, setup/save time, generation time and total pipeline time.
+Training time is wall time for trainer.train(), including intermediate checkpoint saves.
+When resuming, the time refers only to the current invocation, not lost/previous sessions.
+The report shows both responses, textual differences, unchanged checks and regressions
+on explicit requirements (base passed, adapter failed). This is not a literary quality score.
+Literary meaning, coherence and style require human review of the included responses.
+No detected regressions does not prove no degradation. Token-limit hits are flagged.
+pipeline-status.json tracks the overall stage; training-status.json tracks training only.
+Do not interpret the old training status during baseline evaluation as current activity.
+Repeat comparison without retraining a completed adapter:
+  D:\ModelTraining\start-training.ps1 -EvaluateOnly
+Resume using a Linux checkpoint path:
+  D:\ModelTraining\start-training.ps1 -Resume /mnt/d/ModelTraining/outputs/literature-qlora/checkpoint-100
+
+Checkpoints: outputs/literature-qlora/checkpoint-* (every 100 optimizer steps, keep 2)
+Final adapter: outputs/literature-qlora/adapter
+Existing nonempty output directories are protected against accidental overwrite.
+For another run use train_literature.py --output outputs/another-run inside WSL.
+Resume explicitly with --resume /path/to/checkpoint-N.
+Ctrl+C interrupts training; the most recent saved checkpoint can be resumed.
+
+Default full training means one epoch over all 8018 training conversations (about 1003 steps).
+The -MaxSteps option is only for short diagnostic runs; such runs are labelled in the report.
+
+Context capacity checks:
+2048: PASS, peak allocated 8.07 GiB.
+4096: PASS, peak allocated 8.73 GiB.
+8192: PASS, peak allocated 10.12 GiB, free VRAM ~3.91 GiB at step end.
+12288: PASS, peak allocated 11.63 GiB, reserved 12.95 GiB, free ~1.57 GiB.
+16384: PASS, peak allocated 13.23 GiB, reserved 14.44 GiB, free ~0.18 GiB.
+32768: STOPPED before first step completed due to VRAM/host RAM pressure and swap.
+This was not a confirmed CUDA OOM; 65536 was not tested.
+16384 is the largest successful tested length, not an exact universal maximum.
+Checks: two optimizer steps, two accumulated microbatches per step, batch 1,
+rank 8, NF4/BF16, Unsloth gradient checkpointing/offload. Lengths beyond the
+longest train example used repeated real text to stress the full context.
+Long-term stability and different batch/rank/multimodal settings are not established.

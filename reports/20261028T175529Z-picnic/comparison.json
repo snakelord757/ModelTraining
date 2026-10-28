@@ -1,0 +1,116 @@
+{
+  "training_seconds": 145.02536464099998,
+  "pipeline_seconds": 490.78560399,
+  "regressions": [
+    {
+      "id": "F036-q2-grounded",
+      "reasons": [
+        "ответ впервые достиг лимита генерации"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "F025-q1-grounded",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F025-q2-grounded",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F025-no-context",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F028-q1-grounded",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F028-q2-grounded",
+      "identical": true,
+      "possible_regressions": []
+    },
+    {
+      "id": "F028-no-context",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F036-q1-grounded",
+      "identical": true,
+      "possible_regressions": []
+    },
+    {
+      "id": "F036-q2-grounded",
+      "identical": false,
+      "possible_regressions": [
+        "ответ впервые достиг лимита генерации"
+      ]
+    },
+    {
+      "id": "F036-no-context",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F037-q1-grounded",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F037-q2-grounded",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F037-no-context",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F040-q1-grounded",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F040-q2-grounded",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F040-no-context",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F042-q1-grounded",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "F042-q2-grounded",
+      "identical": true,
+      "possible_regressions": []
+    },
+    {
+      "id": "F042-no-context",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "unknown-1",
+      "identical": false,
+      "possible_regressions": []
+    },
+    {
+      "id": "unknown-2",
+      "identical": false,
+      "possible_regressions": []
+    }
+  ]
+}

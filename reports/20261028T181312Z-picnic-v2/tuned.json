@@ -1,0 +1,502 @@
+{
+  "phase": "tuned",
+  "adapter": "/mnt/d/ModelTraining/outputs/qwen-picnic-grounded-v2/adapter",
+  "settings": {
+    "max_new_tokens": 384,
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.0
+  },
+  "seed": 3407,
+  "suite_sha256": "aeab6bc854fed41ce879a06baf4f56cae50931004e36028358777da29eed0b55",
+  "answers": [
+    {
+      "id": "F025-q1-grounded",
+      "answer": "Она не может выдержать холод. [PDF, с. 31]",
+      "tokens": 19,
+      "hit_limit": false,
+      "seconds": 7.7934417630000326,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [
+          31
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F025-q2-grounded",
+      "answer": "Она носит куртку. [PDF, с. 76]",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.836503036999943,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [
+          76
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F025-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.490426372999991,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F028-q1-grounded",
+      "answer": "Он врач-специалист по нечеловеческим заболеваниям. [PDF, с. 29, 30, 45]",
+      "tokens": 39,
+      "hit_limit": false,
+      "seconds": 3.4387952530000803,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [
+          29,
+          30,
+          45
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F028-q2-grounded",
+      "answer": "Рэдрик привозит раненого сталкера в клинику. [PDF, с. 30]",
+      "tokens": 30,
+      "hit_limit": false,
+      "seconds": 2.684040464000077,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [
+          30
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F028-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.074446856999998,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F036-q1-grounded",
+      "answer": "Он не называет Мартышку по имени. Это не упоминается. [PDF, с. 64]",
+      "tokens": 30,
+      "hit_limit": false,
+      "seconds": 2.658579454000005,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [
+          64
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F036-q2-grounded",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.141296893999993,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F036-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 2.9893697710000424,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F037-q1-grounded",
+      "answer": "Это область повышенной гравитации. [PDF, с. 58, 59, 11, 12, 14]",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.304684191999968,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [
+          11,
+          12,
+          14,
+          58,
+          59
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F037-q2-grounded",
+      "answer": "Они не плеши, а погонщики. [PDF, с. 57]",
+      "tokens": 24,
+      "hit_limit": false,
+      "seconds": 2.159681680999938,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [
+          57
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F037-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 2.9890160659999765,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F040-q1-grounded",
+      "answer": "В романе высказывается версия, что контакт продолжается. [PDF, с. 58]",
+      "tokens": 25,
+      "hit_limit": false,
+      "seconds": 2.176560935999987,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [
+          58
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F040-q2-grounded",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.126549264999994,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F040-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 2.9956829190000462,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F042-q1-grounded",
+      "answer": "Рэдрик и Арчибальд. [PDF, с. 74, 75, 68]",
+      "tokens": 30,
+      "hit_limit": false,
+      "seconds": 2.5865187109999397,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [
+          68,
+          74,
+          75
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F042-q2-grounded",
+      "answer": "Он не участвует в этой истории. [PDF, с. 48]",
+      "tokens": 21,
+      "hit_limit": false,
+      "seconds": 1.9007836600000019,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [
+          48
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F042-no-context",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 2.9872592220000342,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "unknown-1",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.0329070519999277,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "unknown-2",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.144621200000074,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F025-new-answer",
+      "answer": "Она не имела волос, на которую можно было смотреть. [PDF, с. 32]",
+      "tokens": 25,
+      "hit_limit": false,
+      "seconds": 2.3206399970000575,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [
+          32
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": false
+      }
+    },
+    {
+      "id": "F025-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.1677436329999864,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F028-new-answer",
+      "answer": "Рэдрик. [PDF, с. 29]",
+      "tokens": 16,
+      "hit_limit": false,
+      "seconds": 1.5170080320000352,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [
+          29
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F028-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.137200694999933,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F036-new-answer",
+      "answer": "Она носит имя Мария. [PDF, с. 63]",
+      "tokens": 20,
+      "hit_limit": false,
+      "seconds": 1.8281473519999736,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [
+          63
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F036-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.0844256630000473,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F037-new-answer",
+      "answer": "Это сила гравитации. [PDF, с. 59]",
+      "tokens": 19,
+      "hit_limit": false,
+      "seconds": 1.7285893990000432,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [
+          59
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F037-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.1280634629999895,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F040-new-answer",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.1222591120000516,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F040-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.227184008999984,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    },
+    {
+      "id": "F042-new-answer",
+      "answer": "Рэдрик Шухарт. [PDF, с. 64]",
+      "tokens": 19,
+      "hit_limit": false,
+      "seconds": 1.7501846490000617,
+      "checks": {
+        "repeated_10gram_fraction": 0,
+        "cited_pages": [
+          64
+        ],
+        "citations_outside_context": [],
+        "refusal_marker": false,
+        "expected_page_retrieved": true
+      }
+    },
+    {
+      "id": "F042-new-unsupported",
+      "answer": "В предоставленных фрагментах недостаточно сведений для ответа. Это не означает, что таких сведений нет в романе.",
+      "tokens": 36,
+      "hit_limit": false,
+      "seconds": 3.2827437209999744,
+      "checks": {
+        "repeated_10gram_fraction": 0.0,
+        "cited_pages": [],
+        "citations_outside_context": [],
+        "refusal_marker": true,
+        "expected_page_retrieved": null
+      }
+    }
+  ]
+}

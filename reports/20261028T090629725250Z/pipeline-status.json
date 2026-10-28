@@ -1,0 +1,19 @@
+{
+  "stage": "completed",
+  "model_id": "Qwen/Qwen3-1.7B",
+  "report_directory": "/mnt/d/ModelTraining/reports/20261028T090629725250Z",
+  "output": "/mnt/d/ModelTraining/outputs/qwen3-1.7b-literature",
+  "started_utc": "20261028T090629725250Z",
+  "arguments": {
+    "epochs": 1.0,
+    "max_steps": -1,
+    "max_length": 4096,
+    "train_samples": 1000,
+    "resume": null,
+    "output": "outputs/qwen3-1.7b-literature",
+    "evaluate_only": false
+  },
+  "elapsed_seconds": 827.1650545979999,
+  "report": "/mnt/d/ModelTraining/reports/20261028T090629725250Z/report.html",
+  "training_seconds": 239.6266701379999
+}

@@ -1,0 +1,113 @@
+{
+  "status": "stopped_resource_pressure",
+  "lengths": [
+    2048,
+    4096,
+    8192,
+    16384,
+    32768,
+    65536
+  ],
+  "batch_size": 1,
+  "rank": 8,
+  "microbatches_per_optimizer_step": 2,
+  "optimizer_steps_per_length": 2,
+  "results": [
+    {
+      "length": 2048,
+      "status": "passed",
+      "steps": [
+        {
+          "seconds": 103.93303166300001,
+          "loss": 8.675002098083496
+        },
+        {
+          "seconds": 9.427639051000028,
+          "loss": 8.728678703308105
+        }
+      ],
+      "repeated_source": false,
+      "peak_allocated_gib": 8.066649913787842,
+      "peak_reserved_gib": 8.45703125,
+      "free_gib": 6.28515625
+    },
+    {
+      "length": 4096,
+      "status": "passed",
+      "steps": [
+        {
+          "seconds": 21.720706395000036,
+          "loss": 8.54680061340332
+        },
+        {
+          "seconds": 22.28322670099999,
+          "loss": 8.541996955871582
+        }
+      ],
+      "repeated_source": false,
+      "peak_allocated_gib": 8.728286266326904,
+      "peak_reserved_gib": 9.125,
+      "free_gib": 5.6171875
+    },
+    {
+      "length": 8192,
+      "status": "passed",
+      "steps": [
+        {
+          "seconds": 58.55617069300001,
+          "loss": 8.138903617858887
+        },
+        {
+          "seconds": 56.16082109200005,
+          "loss": 8.08331298828125
+        }
+      ],
+      "repeated_source": false,
+      "peak_allocated_gib": 10.124454021453857,
+      "peak_reserved_gib": 10.83203125,
+      "free_gib": 3.91015625
+    },
+    {
+      "length": 16384,
+      "status": "passed",
+      "steps": [
+        {
+          "seconds": 173.201255597,
+          "loss": 4.980178356170654
+        },
+        {
+          "seconds": 172.38892623200002,
+          "loss": 4.945637226104736
+        }
+      ],
+      "repeated_source": true,
+      "peak_allocated_gib": 13.232333660125732,
+      "peak_reserved_gib": 14.4375,
+      "free_gib": 0.17889022827148438
+    },
+    {
+      "length": 32768,
+      "status": "stopped_resource_pressure",
+      "steps": [],
+      "repeated_source": true,
+      "reason": "Stopped before first optimizer step: VRAM nearly full, WSL available RAM 802 MiB, swap used 778 MiB; Unsloth host RAM warning. Not a confirmed CUDA OOM."
+    }
+  ],
+  "dataset_summary": {
+    "count": 9434,
+    "min": 45,
+    "max": 10290,
+    "p50": 4525,
+    "p90": 4879,
+    "p95": 5070,
+    "p99": 5410,
+    "coverage": {
+      "2048": 0.010917956328174687,
+      "4096": 0.06529573881704473,
+      "8192": 0.9997880008479966,
+      "16384": 1.0,
+      "32768": 1.0,
+      "65536": 1.0
+    }
+  }
+}

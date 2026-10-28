@@ -1,0 +1,420 @@
+{
+  "timings": {
+    "training_seconds": 239.6266701379999,
+    "training_setup_and_save_seconds": 269.5099902589999,
+    "generation_seconds": 493.45485465000013,
+    "pipeline_seconds_before_report": 827.0325794359999
+  },
+  "training": {
+    "status": "completed",
+    "model_id": "Qwen/Qwen3-1.7B",
+    "model_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+    "preparation": {
+      "model_id": "Qwen/Qwen3-1.7B",
+      "max_length": 4096,
+      "train_samples": 1000,
+      "splits": {
+        "train": {
+          "source_rows": 8018,
+          "kept_rows": 260,
+          "truncated_rows": 0,
+          "skipped_long_rows": 7758,
+          "no_target_rows": 0,
+          "invalid_rows": 0,
+          "target_tokens": 700231,
+          "eligible_rows": 260
+        },
+        "validation": {
+          "source_rows": 708,
+          "kept_rows": 24,
+          "truncated_rows": 0,
+          "skipped_long_rows": 684,
+          "no_target_rows": 0,
+          "invalid_rows": 0,
+          "target_tokens": 68510,
+          "eligible_rows": 24
+        },
+        "test": {
+          "source_rows": 708,
+          "kept_rows": 19,
+          "truncated_rows": 0,
+          "skipped_long_rows": 689,
+          "no_target_rows": 0,
+          "invalid_rows": 0,
+          "target_tokens": 47711,
+          "eligible_rows": 19
+        }
+      },
+      "loss": "Assistant turn only; prompt labels are -100",
+      "truncation": "Skip overlength examples, never truncate; seed 3407 sample; never train on validation/test"
+    },
+    "training_seconds": 239.6266701379999,
+    "total_seconds": 269.5099902589999,
+    "global_step": 33,
+    "epoch": 1.0,
+    "requested_epochs": 1.0,
+    "max_steps": -1,
+    "resume_from": null,
+    "metrics": {
+      "train_runtime": 262.018,
+      "train_samples_per_second": 0.992,
+      "train_steps_per_second": 0.126,
+      "total_flos": 6198187759239168.0,
+      "train_loss": 2.8132521094697895,
+      "epoch": 1.0
+    },
+    "timing_scope": "This invocation of trainer.train; includes checkpoint saving, excludes initial loading and final adapter saving."
+  },
+  "regressions_on_checked_requirements": [
+    "L08",
+    "C03",
+    "C08",
+    "C09"
+  ],
+  "comparisons": [
+    {
+      "id": "L01",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Заданный диапазон слов: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.33363390441839497,
+      "base_checks": {
+        "Заданный диапазон слов": false
+      },
+      "tuned_checks": {
+        "Заданный диапазон слов": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "L02",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Заданный диапазон слов: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.09773828756058159,
+      "base_checks": {
+        "Заданный диапазон слов": false
+      },
+      "tuned_checks": {
+        "Заданный диапазон слов": false
+      },
+      "truncated": true
+    },
+    {
+      "id": "L03",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Заданный диапазон слов: не выполнено",
+        "Нет запрещённых слов: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.35334088335220837,
+      "base_checks": {
+        "Заданный диапазон слов": false,
+        "Нет запрещённых слов": false
+      },
+      "tuned_checks": {
+        "Заданный диапазон слов": false,
+        "Нет запрещённых слов": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "L04",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Заданный диапазон слов: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.07801950487621906,
+      "base_checks": {
+        "Заданный диапазон слов": false
+      },
+      "tuned_checks": {
+        "Заданный диапазон слов": false
+      },
+      "truncated": true
+    },
+    {
+      "id": "L05",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Заданный диапазон слов: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.08387096774193549,
+      "base_checks": {
+        "Заданный диапазон слов": false
+      },
+      "tuned_checks": {
+        "Заданный диапазон слов": false
+      },
+      "truncated": true
+    },
+    {
+      "id": "L06",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Заданный диапазон слов: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.09945609945609946,
+      "base_checks": {
+        "Заданный диапазон слов": false
+      },
+      "tuned_checks": {
+        "Заданный диапазон слов": false
+      },
+      "truncated": true
+    },
+    {
+      "id": "L07",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Заданный диапазон слов: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.08970976253298153,
+      "base_checks": {
+        "Заданный диапазон слов": false
+      },
+      "tuned_checks": {
+        "Заданный диапазон слов": false
+      },
+      "truncated": true
+    },
+    {
+      "id": "L08",
+      "lost": [
+        "Число абзацев"
+      ],
+      "gained": [],
+      "stable": [],
+      "identical": false,
+      "similarity": 0.1206552137435078,
+      "base_checks": {
+        "Число абзацев": true
+      },
+      "tuned_checks": {
+        "Число абзацев": false
+      },
+      "truncated": true
+    },
+    {
+      "id": "C01",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Точный ответ и формат: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.4897959183673469,
+      "base_checks": {
+        "Точный ответ и формат": false
+      },
+      "tuned_checks": {
+        "Точный ответ и формат": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "C02",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Точный ответ и формат: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.8357487922705314,
+      "base_checks": {
+        "Точный ответ и формат": false
+      },
+      "tuned_checks": {
+        "Точный ответ и формат": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "C03",
+      "lost": [
+        "Точный ответ и формат"
+      ],
+      "gained": [],
+      "stable": [],
+      "identical": false,
+      "similarity": 0.20224719101123595,
+      "base_checks": {
+        "Точный ответ и формат": true
+      },
+      "tuned_checks": {
+        "Точный ответ и формат": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "C04",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Точный ответ и формат: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.16666666666666666,
+      "base_checks": {
+        "Точный ответ и формат": false
+      },
+      "tuned_checks": {
+        "Точный ответ и формат": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "C05",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Корректный JSON и значения: не выполнено"
+      ],
+      "identical": true,
+      "similarity": 1.0,
+      "base_checks": {
+        "Корректный JSON и значения": false
+      },
+      "tuned_checks": {
+        "Корректный JSON и значения": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "C06",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Точный ответ и формат: выполнено"
+      ],
+      "identical": true,
+      "similarity": 1.0,
+      "base_checks": {
+        "Точный ответ и формат": true
+      },
+      "tuned_checks": {
+        "Точный ответ и формат": true
+      },
+      "truncated": false
+    },
+    {
+      "id": "C07",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Точный ответ и формат: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.24242424242424243,
+      "base_checks": {
+        "Точный ответ и формат": false
+      },
+      "tuned_checks": {
+        "Точный ответ и формат": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "C08",
+      "lost": [
+        "Точный ответ и формат"
+      ],
+      "gained": [],
+      "stable": [],
+      "identical": false,
+      "similarity": 0.75,
+      "base_checks": {
+        "Точный ответ и формат": true
+      },
+      "tuned_checks": {
+        "Точный ответ и формат": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "C09",
+      "lost": [
+        "Точный ответ и формат"
+      ],
+      "gained": [],
+      "stable": [],
+      "identical": false,
+      "similarity": 0.3333333333333333,
+      "base_checks": {
+        "Точный ответ и формат": true
+      },
+      "tuned_checks": {
+        "Точный ответ и формат": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "C10",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Точный ответ и формат: не выполнено"
+      ],
+      "identical": true,
+      "similarity": 1.0,
+      "base_checks": {
+        "Точный ответ и формат": false
+      },
+      "tuned_checks": {
+        "Точный ответ и формат": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "C11",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Точный ответ и формат: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.25742574257425743,
+      "base_checks": {
+        "Точный ответ и формат": false
+      },
+      "tuned_checks": {
+        "Точный ответ и формат": false
+      },
+      "truncated": false
+    },
+    {
+      "id": "C12",
+      "lost": [],
+      "gained": [],
+      "stable": [
+        "Точный ответ и формат: не выполнено"
+      ],
+      "identical": false,
+      "similarity": 0.0,
+      "base_checks": {
+        "Точный ответ и формат": false
+      },
+      "tuned_checks": {
+        "Точный ответ и формат": false
+      },
+      "truncated": false
+    }
+  ],
+  "scope": "Automatic explicit constraint checks only. Literary quality requires human review."
+}

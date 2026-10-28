@@ -1,0 +1,15 @@
+{
+  "stage": "interrupted",
+  "report_directory": "/mnt/d/ModelTraining/reports/20261028T071035668600Z",
+  "output": "/mnt/d/ModelTraining/outputs/literature-qlora",
+  "started_utc": "20261028T071035668600Z",
+  "arguments": {
+    "epochs": 1.0,
+    "max_steps": -1,
+    "max_length": 12288,
+    "resume": null,
+    "output": "outputs/literature-qlora",
+    "evaluate_only": false
+  },
+  "elapsed_seconds": 5565.2798063
+}
